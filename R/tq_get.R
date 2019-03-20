@@ -511,7 +511,8 @@ tq_get_util_2 <- function(x, get, complete_cases, map, ...) {
         stock_exchange <- c("XNAS", "XNYS", "XASE") # mornginstar gets from various exchanges
     }
 
-    x <- stringr::str_replace_all(x,"[[:punct:]]", "")
+    # Justin's chnages: DO NOT remove punctuations
+    #x <- stringr::str_replace_all(x,"[[:punct:]]", "")
 
     tryCatch({
 
